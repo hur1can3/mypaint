@@ -1,0 +1,39 @@
+mypaint:
+  I have made a simple drawing program that has the following features:
+      Draw points
+      Draw lines
+      Draw Circles (wireframe only)
+      Draw Rectangles (wireframe only)
+      FloodFill shapes
+      8 different colors to choose from
+      keyboard character input for selections
+      right-click mouse menu system
+      switch between two pixel sizes
+      clear / reset drawing
+
+
+keyboard mappings;
+
+	keys:	function:
+	0-9	change color (WHITE,BLACK,RED,GREEN,BLUE,CYAN,YELLOW,MAGENTA,ORANGE,PURPLE)
+	p	point mode
+	l	line mode
+	c	circle mode
+	r	rectangle mode
+	f	floodfill mode
+	b	pixel size
+	x	clear screen
+	q	quit / exit program   
+
+*menu selections same except for color selection.
+
+To draw a line:
+  left click on starting point, move cursor and click again a line is drawn between points
+
+to draw a circle:
+  left click on starting point, move cursor and circle is drawn with radius size calculated from point distance
+
+to floodfill:
+  You first must have a closed shape like a circle or rectangle, or even make your own by connecting  lines.  Click inside the shape and it will be filled with the currently selected color.
+
+** WARNING: do not attempt to fill an object that is not closed, or has multiple points / weird shapes inside of it as the floodfill algorithm may get stuck in infinite loop or have memory overflow.
